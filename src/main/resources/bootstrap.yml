@@ -1,0 +1,14 @@
+server:
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: keystore
+    key-store-type: pkcs12
+    require-ssl: true
+
+spring:
+  application:
+    name: gateway-api-service
+  cloud:
+    config:
+      uri: http://localhost:8000
+      fail-fast: true
